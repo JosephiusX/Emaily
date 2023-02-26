@@ -111,7 +111,10 @@ I chose GitHub verification (account at least 90 days old)
 
 # 17 - 19 [Heroku] Deployment options. 
 
-# 22 Overview of Passport js:
+# 22 Overview of Passport js: 
+
+  ## Time 3.5 hours (into course)
+
 Helper lib for handleing authentication tasks in our express app
 
 ### passport: General helpers for handleing auth in Express apps
@@ -119,6 +122,7 @@ Helper lib for handleing authentication tasks in our express app
 ### passport strategy: Helpers for authenticating with one very specific method(email/password, Google, Facebook, etc)
 we will be using a specific stratigy for google auth but will need other stratigies for other methods. check out the docs to wire up facebook stratigies for example.
 
+## Docs
 https://passportjs.org/docs
 
 # 23 Passport Setup
@@ -129,3 +133,48 @@ https://passportjs.org/docs
       import passport and stratigey
       create passport instance
         pass in strategy
+
+# 24 Google+ Deprecation
+skip
+
+
+# 25 Google Project Setup with new UI
+1 Go to the Google Project Dashboard:
+  https://console.cloud.google.com
+
+
+2 Click CREATE PROJECT button
+    search for "Create project" or "Manage Resources"
+
+3 Name the project and click the CREATE button
+
+    Emaily
+    No organization
+
+4 Click the menu button, select "API's & Services", then "OAuth Consent Screen"
+
+5 select "External" and click CREATE
+
+    may have firewall issues. 
+    had to navigate out of the project, select "oAuth and consent", then select a project before "External" option was available.
+
+6 Fill out the [ app Name ] field(Emaily). Then, add your [ email ] address to the User support email field. Scroll to the bottom under "Developer contact information" and add your [ email ]again.Click SAVE AND CONTINUE button. No other info should be filled out on the consent screen at this time. 
+Fill out:
+
+    App Name
+    email
+    email for dev
+  SAVE AND CONTINUE
+
+7 Click "Credintials" in the sidebar and then click the CREATE CREDENTIALS button
+
+8 Select "OAuth client ID"
+  Fill out:
+
+    Name: Emaily
+
+9 Select "Web Application" 
+  Fill out Authorization URIs
+
+    Origins: http://localhost:5000
+    Redirect URI: http://localhost:5000/auth/google/callback
