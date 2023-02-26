@@ -178,3 +178,19 @@ Fill out:
 
     Origins: http://localhost:5000
     Redirect URI: http://localhost:5000/auth/google/callback
+generates client ID , and secret. I saved them in .gitignore file "secret-note"
+
+NEW* ignore the wildcard(*) after the URIs
+## Time 4 hours
+
+# 26 Enableing OAuth API
+Deprecated instructions
+
+# 27 Securing API keys.
+
+    in server:
+      mkdir config
+    touch config/keys.js
+    add keys.js to .gitignore
+export the client ID and secret from keys.js
+
