@@ -1,3 +1,5 @@
+Hosted location @ # 16 along with how to save changes and shut down instructions to save credits. 
+
 # 9.
     use npm not yarn
     nvm install 8.1.1
@@ -102,5 +104,16 @@ I chose GitHub verification (account at least 90 days old)
 
     make a change to a response.
     railway up
+5.Save credits
 
+    railway down
 
+# 17 - 19 [Heroku] Deployment options. 
+
+# 22 Overview of Passport js:
+Helper lib for handleing authentication tasks in our express app
+
+### passport: General helpers for handleing auth in Express apps
+
+### passport strategy: Helpers for authenticating with one very specific method(email/password, Google, Facebook, etc)
+we will be using a specific stratigy for google auth but will need other stratigies for other methods. check out the docs to wire up facebook stratigies for example.
