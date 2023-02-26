@@ -14,6 +14,12 @@ passport.use(
   console.log(accessToken)
 }))// Passing in keys to passport instance 
 
+app.get(
+  '/auth/google', // when user visits this route
+  passport.authenticate('google', { // Kick to OAuth flow. "google": internal identifyer of the strategy 
+    scope: ['profile', 'email'] // User information from account granted access to when authorized
+  })
+);
 
 const PORT = process.env.PORT || 5000
 app.listen(PORT)

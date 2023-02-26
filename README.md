@@ -199,3 +199,15 @@ export the client ID and secret from keys.js
 - Pass keys into the passport use instance
 - add callbackURL property to google strategy. Route user is sent to once granted permission to the app.
 - second arg to google strategy is an arrow function. (placeholder accessToken for now)
+
+# 29 Testing OAuth
+Add route handler, Kicks user into passport flow.
+
+- in index.js: add /auth/google route handler
+
+Test in browser (small error expected)
+
+    in server:
+      node index.js
+check localhost:5000/auth/google
+? didn't get error in course. I was shown my 2 email addresses. upon selection one I get "Cannot GET /aut/google/callback" error
