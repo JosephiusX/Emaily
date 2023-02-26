@@ -93,9 +93,14 @@ I chose GitHub verification (account at least 90 days old)
 
     railway up
 
+3.View the Application
 
+    provided in previous step.
+      https://jolly-coal-production.up.railway.app
 
+4.Making Changes
 
+    make a change to a response.
 
 
 
