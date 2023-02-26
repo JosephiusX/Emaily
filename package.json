@@ -2,17 +2,27 @@
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
-  "engines" : {
+  "engines": {
     "node": "8.1.1",
     "npm": "5.0.3"
   },
-  "scripts" : {
-    "start":"node index.js"
+  "scripts": {
+    "start": "node index.js"
   },
-  "repository": "https://github.com/JosephiusX/Emaily.git",
-  "author": "<josephiusx@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosephiusX/Emaily.git"
+  },
+  "author": " <josephiusx@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "description": "use npm not yarn\r     nvm install 8.1.1\r     using latest version though 19.7.0\r     mkdir server\r     cd server\r     git init\r     npm init -y \r     npm i express :  \r        Lib has helpers to simplify HTTP traffic.",
+  "bugs": {
+    "url": "https://github.com/JosephiusX/Emaily/issues"
+  },
+  "homepage": "https://github.com/JosephiusX/Emaily#readme",
+  "devDependencies": {},
+  "keywords": []
 }

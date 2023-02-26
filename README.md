@@ -1,12 +1,12 @@
 # 9.
+    use npm not yarn
     nvm install 8.1.1
     using latest version though 19.7.0
-    npm i -g yarn
     mkdir server
     cd server
     git init
-    yarn init -y 
-    yarn add express :  
+    npm init -y 
+    npm i express :  
        Lib has helpers to simplify HTTP traffic.
 
 # 10.
