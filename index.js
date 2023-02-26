@@ -1,10 +1,18 @@
 const express = require('express');
 const passport = require('passport'); // importing passport
 const GoogleStrategy = require('passport-google-oauth20').Strategy; // importing passport strategy
+const keys = require('./config/keys') // importing from keys.js
 
 const app = express();
 
-passport.use(new GoogleStrategy())// new instance of stratagey, input how it's used
+passport.use(
+  new GoogleStrategy({ // passport strategy for google OAuth
+    clientID: keys.googleClientID,
+    clientSecret: keys.googleClientSeceret,
+    callbackURL: '/auth/google/callback', // redirects user once authenticated
+}, (accessToken) => { // second argument to strategy(placeholder)
+  console.log(accessToken)
+}))// Passing in keys to passport instance 
 
 
 const PORT = process.env.PORT || 5000

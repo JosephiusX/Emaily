@@ -194,3 +194,8 @@ Deprecated instructions
     add keys.js to .gitignore
 export the client ID and secret from keys.js
 
+# 28 Google Strategy Options
+- Import keys.js into our index.js file
+- Pass keys into the passport use instance
+- add callbackURL property to google strategy. Route user is sent to once granted permission to the app.
+- second arg to google strategy is an arrow function. (placeholder accessToken for now)
