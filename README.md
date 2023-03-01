@@ -210,4 +210,30 @@ Test in browser (small error expected)
     in server:
       node index.js
 check localhost:5000/auth/google
+
 ? didn't get error in course. I was shown my 2 email addresses. upon selection one I get "Cannot GET /aut/google/callback" error
+  #? thinking this is a good sign.
+
+# 30 Authorized Redirect URIs
+Handled this earlyer in #25 due to the process being updated.
+
+## Time 5 hours
+
+# 31 OAuth Callbacks
+
+Test oauth like in #29 
+  We should see an email to login with, when selected we see:
+    Caution GET /auth/google/callback
+
+In index.js we setup google oAuth callback route
+
+Testing:
+
+    in server restart:
+      node index.js
+
+    check localhost:5000/auth/google
+
+    select google account
+same result as before because we havent added any information on the. Thats expected.  
+  ? not getting the assess token like course predicts, via access token console.log in passport strategy.

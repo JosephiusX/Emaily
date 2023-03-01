@@ -10,7 +10,8 @@ passport.use(
     clientID: keys.googleClientID,
     clientSecret: keys.googleClientSeceret,
     callbackURL: '/auth/google/callback', // redirects user once authenticated
-}, (accessToken) => { // second argument to strategy(placeholder)
+}, 
+accessToken => { // second argument to strategy(placeholder)
   console.log(accessToken)
 }))// Passing in keys to passport instance 
 
@@ -20,6 +21,8 @@ app.get(
     scope: ['profile', 'email'] // User information from account granted access to when authorized
   })
 );
+
+app.get('/auth/google/callbackk', passport.authenticate('google')) // tates user to the user profile
 
 const PORT = process.env.PORT || 5000
 app.listen(PORT)
