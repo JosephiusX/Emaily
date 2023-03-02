@@ -256,3 +256,11 @@ Test:
 ? Still not getting the logged information expected
   *callback was mispelled in callback route
 #Time 5:40
+
+# 33 Nodemon Setup
+
+    npm i --save nodemon
+
+set it up in a script(package.json):
+
+    "dev": "nodemon index.js"
