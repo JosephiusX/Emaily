@@ -349,6 +349,10 @@ High level overview and again in detail.
 
 15. Navigate to dbs that were created by selecting 'Browse Collections' tab.
 
+16. Select 'database access' select a role for the user
+    'built-in role'
+      'read and write to any database'
+
 using emaily-dev as it that I have already setup.
 
 change password:
@@ -390,3 +394,6 @@ Test:
     check database to see collection is there
 Its Alive!
 ?server immidietly crashes though. 
+
+# 45. Mongoose Queries
+We make sure not to create new user if one already exists with that id
