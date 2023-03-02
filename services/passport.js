@@ -16,9 +16,11 @@ passport.use(// passport strategy  for google OAuth
       User.findOne({ googleId: profile.id}).then(existingUser => { // model instance representing found user
         if (existingUser) {
           // already have record with profile id
+          done(null, existingUser);
         } else {
           // no user record with ID, make a new record
-          new User({ googleId: profile.id }).save();// new instance of a user with save method added
+          new User({ googleId: profile.id }).save()// new instance of a user with save method added
+            .then(user => done(null,user));
         }
       });
     }

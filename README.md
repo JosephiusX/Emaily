@@ -397,3 +397,6 @@ Its Alive!
 
 # 45. Mongoose Queries
 We make sure not to create new user if one already exists with that id
+
+# 46. Passport Callbacks
+
