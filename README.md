@@ -434,3 +434,15 @@ Test : localhost:5000/auth/google
   in another window
     localhost:5000/aut/current_user
       we should get the id and the google id
+
+Time: 11:00
+
+# 52 Logging out users
+Setup up /api/logout rout in authRoutes.js
+
+Test in browser with nodemon running at localhost:5000:
+
+    /api/logout
+    /api/current_user
+      information that was there should be gone
+we should be able to confirm by going through our authorization process again and refreshing current user to see the information populate again, and again refreshing api/logout and the currein_user information will again dissappear when refreshed.
