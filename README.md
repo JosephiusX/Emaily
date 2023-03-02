@@ -313,3 +313,48 @@ Success! we get our info in the terminal.
 About how http is stateless but not https as well as how it works with tokens to remimber users for Authentication.
 
 Time : 7:00
+# 36 Signing In Users with OAuth
+High level overview and again in detail. 
+
+# 37 Introduction to MongoDB
+
+# 38 MongoDB Atlas Setup and Configuration
+1.  Go to https://www.mongodb.com/atlas/database and click the Try Free button (or Sign In if you already have an account)
+
+2. Create user account. Get started free.
+
+3. Accept privacy polocy and submit
+
+4. Brief Questionere.
+
+5. Create free 'Shared' cluster.
+
+6. Click Create Cluster.
+
+7. Security config screen, enter username/password. Copy in safe place.
+
+8. Scrrol to 'Where would you like to connect  from'. Select 'My local Environment', enter '0.0.0.0/0' in 'IP Address' field.(imporntant to avoid connection errors). Click 'Finish' button.
+
+9. Confirmation appears. Click 'Go to Database'
+
+10. Cluster may take  a few minutes to generate(green circle to left when done). Click 'Connect' button.
+
+11. Select 'Connect Your Application'.
+
+12. Copy the full connection string and click the 'Close' button.
+
+13. In 'config/keys.js', create 'mongoURI'. Add the add the copied URI.
+
+14. Remember to replace <password> with the Atlas user's actual password. Next add a db name after slash before question mark.
+
+15. Navigate to dbs that were created by selecting 'Browse Collections' tab.
+
+using emaily-dev as it that I have already setup.
+
+change password:
+
+    From emaily-dev:
+      Database Access
+        Edit
+          generate or create new password
+
