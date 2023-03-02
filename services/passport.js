@@ -5,8 +5,15 @@ const keys = require('../config/keys') // importing from keys.js
 
 const User = mongoose.model('users'); // pull users from mongoose
 
-passport.serializeUser((user, done) => {
-  done(null, user.id)
+passport.serializeUser((user, done) => { // user mongoose model turned into an id
+  done(null, user.id);
+});
+
+passport.deserializeUser((id, done) => { // id turned into a mongoose model instance
+  User.findById(id)
+    .then(user => {
+      done(null, user);
+    })
 });
 
 passport.use(// passport strategy  for google OAuth

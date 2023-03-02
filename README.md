@@ -401,3 +401,11 @@ We make sure not to create new user if one already exists with that id
 # 46. Passport Callbacks
 Time : 9:22
 # 47. Encoding Users
+serializerUser function in passport.js
+
+# 48. Deserialize User
+deserializeUser function in passport.js
+
+# 48. Deserialize User
+tell passport to use cookies to manage authentication inside our application.
+
