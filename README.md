@@ -409,3 +409,15 @@ deserializeUser function in passport.js
 # 49. Enabeling cookies
 tell passport to use cookies to manage authentication inside our application.
 
+    npm i -s cookie-session
+in index.js:
+    
+    import cookieSession
+    import passport
+fill out cookiesSession inside app.use
+in keys create a random cookieKey
+in index.js
+
+    pass that key into the keys array
+    app.use statements both for initialize and session
+
