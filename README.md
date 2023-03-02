@@ -358,3 +358,10 @@ change password:
         Edit
           generate or create new password
 
+# 40. Connecting Mongoose to Mongo
+
+    npm i -s mongoose
+    in index.js require mongoose
+    import the mongoURI
+
+Time 7:22
