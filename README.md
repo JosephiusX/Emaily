@@ -446,3 +446,39 @@ Test in browser with nodemon running at localhost:5000:
     /api/current_user
       information that was there should be gone
 we should be able to confirm by going through our authorization process again and refreshing current user to see the information populate again, and again refreshing api/logout and the currein_user information will again dissappear when refreshed.
+
+# 53. [Optional] A Deeper Dive
+
+# Section 5: Dev vs Prod Environments
+
+# 54. Dev vs Prod Keys
+
+# 55. Mongo DB Atlas Production Setup and Configuration
+1. Sign in
+2. From dashboard find current product dropdown, click it and select 'New Project'
+3. Name project, click 'Next'
+4. Click 'Create Project'
+5. Click 'Build a Database'
+6. Select 'Shared Free' click 'Create'
+7. Leave options selected, click 'Create Cluster'
+8. Fill out 'Username', and 'Autogenerate Secure Password'
+9. Scroll down to 'My Local Environment' field. Enter 0.0.0.0/0
+10. When cluster is ready, click 'Connect'
+11. Select Connect 'Your Application'
+12. Copy connection string. Select 'Built-in role'. close
+13. Save connection string to safe place
+
+To generate new connection string if environment is already setup:
+
+    From db dashboard:
+      click 'Database Access'
+        click 'Edit'
+          click 'Edit Password'
+            setup 'Database User Privilages'
+              'Update'
+    Locate connection string:
+      'Database' on upper left
+        'connect'
+          'connect your application'
+            copy connection string, replace <password> with actual password. 
+
