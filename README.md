@@ -406,6 +406,6 @@ serializerUser function in passport.js
 # 48. Deserialize User
 deserializeUser function in passport.js
 
-# 48. Deserialize User
+# 49. Enabeling cookies
 tell passport to use cookies to manage authentication inside our application.
 
