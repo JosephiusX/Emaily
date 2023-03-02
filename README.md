@@ -482,3 +482,39 @@ To generate new connection string if environment is already setup:
           'connect your application'
             copy connection string, replace <password> with actual password. 
 
+# 56. Generating Production Resources
+    console.developers.google.com
+
+    click current project dropdown 'New Project'
+
+    project name 'emaily-prod', click 'create' wait for it to complete.
+
+    from project selector change to new project
+          
+    'Enable APIs and services' , search google+' click 'Enable'
+
+    on lefthand select 'Credentials'
+
+    'Create Credintials'
+
+    'Configure concent screen'
+      ? External
+
+    'OAuth Client ID'
+
+    fill out product name, 'save'
+
+    select 'Web Application'
+
+        fill out Auth Origins and redirect URIs
+Production URIs will be our Heroku, or Railway URIs. we can circle back and take care of that later once it's generated. 
+
+* I have taken the infor from Email-dev and applying it to Emaily-prod, so I need to generate google and mongo keys for Emaily-dev again.
+
+    At least dev resourses are working
+
+
+
+
+  
+
