@@ -16,7 +16,7 @@ app.use(
     keys: [keys.cookieKey]// the array allows option to provide multiple keys for extra security
   })
 );
-app.use(passport.initialize);
+app.use(passport.initialize());
 app.use(passport.session());
 
 require('./routes/authRoutes')(app); // Routes from authRoutes, Directly required instead of named

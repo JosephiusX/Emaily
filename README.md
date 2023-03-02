@@ -421,3 +421,16 @@ in index.js
     pass that key into the keys array
     app.use statements both for initialize and session
 
+# 50 Require Temporary Update for "req.session.regenerate is not a function'
+
+    npm u passport
+    npm i passport@0.5
+
+# 51 Testing Authentication
+
+in authRoutes.js setup /api/current_user route
+
+Test : localhost:5000/auth/google
+  in another window
+    localhost:5000/aut/current_user
+      we should get the id and the google id
