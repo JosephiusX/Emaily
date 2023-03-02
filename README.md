@@ -264,3 +264,5 @@ Test:
 set it up in a script(package.json):
 
     "dev": "nodemon index.js"
+    in server run to setup:
+      npm run dev
