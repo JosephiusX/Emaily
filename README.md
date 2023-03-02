@@ -378,3 +378,15 @@ Time 7:22
       mkdir models
       touch models/User.js
     in index.js require Users.js
+
+# 43. Saving Model Instances
+with server running visit :5000/auth/google
+
+    require mongoose in passport.js
+
+Test: 
+
+    localhost:5000/auth/google , with nodemon running.
+    check database to see collection is there
+Its Alive!
+?server immidietly crashes though. 
