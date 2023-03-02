@@ -308,3 +308,8 @@ Test:
     select email
 Success! we get our info in the terminal. 
 
+# 35 The Theory of Authentication
+
+About how http is stateless but not https as well as how it works with tokens to remimber users.
+
+Time : 7:00
