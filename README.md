@@ -237,3 +237,22 @@ Testing:
     select google account
 same result as before because we havent added any information on the. Thats expected.  
   ? not getting the assess token like course predicts, via access token console.log in passport strategy.
+
+# 32 Access and Refresh Tokens
+Over of where we are in the google OAuth flow.
+The function at the end of the google strategy that currently shows the access token is what we will use to use the information we got from the authorized google account. 
+
+index.js add to google strategy callback function:
+
+    in props add:
+      refreshToken, profile, done
+    console.log:
+      access token, refresh token, profile
+Test: 
+
+    restart server
+    run through OAuth flow again starting with:
+      localhost:5000/auth/google
+? Still not getting the logged information expected
+  *callback was mispelled in callback route
+#Time 5:40
