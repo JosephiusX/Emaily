@@ -266,3 +266,45 @@ set it up in a script(package.json):
     "dev": "nodemon index.js"
     in server run to setup:
       npm run dev
+
+# Section 4 Adding MongoDB
+
+# 34 Server Structure Refactor
+
+Server
+  config : Protected API keys and settings
+  routes : All route handlers
+  services : Helper modules and buisness logic
+  index.js : Helper modules, buisness logic
+
+    in server:
+    mkdir routes
+    touch routes/authRoutes.js
+Cut 2 auth routes from indes.js and paste into auth Routes.
+    
+    mkdir services
+    touch services/passport.js
+    From index.js cut and paste passport config.
+
+Import statements
+
+    Move passport imports from index.js for passport GoogleStrategy, and keys.
+    add '.' to keys import route sinse we moved it
+
+    in index.js require passportConfig from ./services/passport
+
+    in authRoutes require passport
+
+We need to get the app object into 'authRoutes.js'
+
+In auth routes wrap out routes in a module.exports function. Add app as arg. 
+  In index.js import that file as 'authRoutes'
+    Call auth routes with the app object 
+      instead of named fn we can require it directly
+Test:
+
+    npm run dev
+    visit localhost:/auth/google
+    select email
+Success! we get our info in the terminal. 
+
