@@ -5,6 +5,10 @@ const keys = require('../config/keys') // importing from keys.js
 
 const User = mongoose.model('users'); // pull users from mongoose
 
+passport.serializeUser((user, done) => {
+  done(null, user.id)
+});
+
 passport.use(// passport strategy  for google OAuth
   new GoogleStrategy(
     {

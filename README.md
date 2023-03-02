@@ -399,4 +399,5 @@ Its Alive!
 We make sure not to create new user if one already exists with that id
 
 # 46. Passport Callbacks
-
+Time : 9:22
+# 47. Encoding Users
