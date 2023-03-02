@@ -363,5 +363,18 @@ change password:
     npm i -s mongoose
     in index.js require mongoose
     import the mongoURI
+    pass it into mongoose.connect
+Test:
+
+    restart nodemon
 
 Time 7:22
+
+# 41. Breather and Review
+
+# 42. Mongoose Model Classes
+
+    in server:
+      mkdir models
+      touch models/User.js
+    in index.js require Users.js
