@@ -709,3 +709,31 @@ No vairble is assigned with this type of import, all we need is import and the a
 # 88. Header Design
 
 We change class to className when using materialize.
+
+# 89. Current User API
+
+# 90. Additional Proxy Rules
+
+    npm i axios redux-thunk
+
+axios is for making http requests to our backend api
+redux-thunk makes asynchronous action creaters behave as expected
+
+    in client/src/index.js
+      import & use as middleware
+
+    touch src/actions/index.js
+      import axios
+      define action creator
+
+    inside actions:
+      touch types.js
+
+? not sure if the proxy is needed or not
+
+# 91. Basics of Redux Thunk
+with redux-thunk we dont have controle over function that dispatches the action. redux-thunk gives us controle. 
+
+If redux sees we called a function instead of an action, it automatically passes dispatch into the function. We have control of when the function is dispatched. 
+? why is this helpful?
+* we can wait to dispatch the action until the axios request or response is completed.
