@@ -705,3 +705,7 @@ We do need the file extention for non js files however.
 no need to specify a relative path './asddf',. Without a relative path webpack assumes its a npm module(node_modules).  
 
 No vairble is assigned with this type of import, all we need is import and the address.
+
+# 88. Header Design
+
+We change class to className when using materialize.
