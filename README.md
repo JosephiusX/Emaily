@@ -688,3 +688,8 @@ Basic route structure setup, and working.
 https://materializecss.com/
 
     only partial compatibility with react. The javascript components for examble wont work right out the box.
+CDN can be used, but we want to install it as a npm module.
+
+In client:
+
+    npm i materialize-css
