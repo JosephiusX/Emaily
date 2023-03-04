@@ -669,3 +669,6 @@ Naming convention: If a file is exporting a component it starts with uppercase. 
 We have a provider with the store passed in. The provider is the connector between the store and the app. The whole point is to make it easy to access data from anywhere, even deeply nested components.
 
 # 79. The Auth Reducer
+
+# 80. Finishing Reducer Setup
+
