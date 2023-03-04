@@ -693,3 +693,15 @@ CDN can be used, but we want to install it as a npm module.
 In client:
 
     npm i materialize-css
+
+# 86. Materialize CSS
+
+# 87. Webpack with CSS
+
+Using Webpack allows us to import in as a module from node_modules.
+
+We do need the file extention for non js files however.
+
+no need to specify a relative path './asddf',. Without a relative path webpack assumes its a npm module(node_modules).  
+
+No vairble is assigned with this type of import, all we need is import and the address.
