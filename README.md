@@ -682,3 +682,9 @@ We have a provider with the store passed in. The provider is the connector betwe
 
 # 85. Always Visible Components
 Basic route structure setup, and working.
+
+# 86. Materialize CSS
+
+https://materializecss.com/
+
+    only partial compatibility with react. The javascript components for examble wont work right out the box.
