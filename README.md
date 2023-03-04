@@ -555,6 +555,10 @@ Test:
          "npm": "5.0.3"
        },
 this step was recomended for heroku compatibility anyway. 
+? still no luck.
+? changeing passport to version 0.4.1
+  still no luck
+Moving on for now until I get an answer. 
 
     
 # 61. [Heroku] Production Environment Variables
@@ -566,4 +570,6 @@ in passport google strategy change callbackURL to add 'https://jolly-coal-produc
 
 add 'proxy : true'
   
+
+Time: 14:50
 
