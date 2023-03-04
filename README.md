@@ -676,3 +676,9 @@ We have a provider with the store passed in. The provider is the connector betwe
 
 # 82. React Router Setup
 
+# 83. Route Configuration
+
+# 84. Matching Routes with Exact
+
+# 85. Always Visible Components
+Basic route structure setup, and working.
