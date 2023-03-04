@@ -636,3 +636,10 @@ Update our dev Authorized redirects in our google console Uris to add:
 ? same problem from previous lesson
 
 # 70. [Optional] Why This Architecture?
+
+# Sec 7 Developing the Client side. 
+Time: 18:50
+
+# 71. Async/Await Syntax
+
+# 72. Refactoring with Async/Await
