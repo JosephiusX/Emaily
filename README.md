@@ -526,8 +526,44 @@ placed keys from 'keys.js' into 'dev.js' instead.
     touch config/prod.js
     .gitignore: dev.js
 
+# 59 [Railway] Production Environment Variables.
 
+1. click the application service button
+  ? Settings>Shared variables.
+2. Add production environment variables: Variables>New Variable
+  as value key pairs.
+    aslo add 'CI : false'
 
+# 60. [Railway] Avoiding and Error.
 
+    adjust auth/google/callback route
+
+Test:
+    
+    in server: railway up
+    jolly-coal-production.up.railway.app
+? Getting server error
+  first maybe theres a different location for my production keys
+  will try regenerating production keys
+* I setup my variables in the wrong place. 
+? still not working. Try regenerating prod keys. 
+    keys have been updated without fixing provlem
+* in dev environmont it works fine when removing from package.json:
+
+       "engines": {
+         "node": "8.1.1",
+         "npm": "5.0.3"
+       },
+this step was recomended for heroku compatibility anyway. 
+
+    
+# 61. [Heroku] Production Environment Variables
+
+# 62. Fixing Proxy Issues.
+in passport google strategy change callbackURL to add 'https://jolly-coal-production.up.railway.app' to the beginning of the route
+
+    or
+
+add 'proxy : true'
   
 

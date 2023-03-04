@@ -1,7 +1,7 @@
 const passport = require('passport'); // importing passport
 const GoogleStrategy = require('passport-google-oauth20').Strategy; // importing passport strategy
-const mongoose = require('mongoose')
-const keys = require('../config/keys') // importing from keys.js
+const mongoose = require('mongoose');
+const keys = require('../config/keys'); // importing from keys.js
 
 const User = mongoose.model('users'); // pull users from mongoose
 
@@ -21,7 +21,8 @@ passport.use(// passport strategy  for google OAuth
     {
       clientID: keys.googleClientID,
       clientSecret: keys.googleClientSecret,
-      callbackURL: '/auth/google/callback'// redirects user once authenticated
+      callbackURL: '/auth/google/callback',// redirects user once authenticated
+      proxy : true
     },
     (accessToken, refreshToken, profile, done) => {// second argument to strategy
       User.findOne({ googleId: profile.id}).then(existingUser => { // model instance representing found user

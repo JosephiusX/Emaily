@@ -1,6 +1,5 @@
 const passport = require('passport');
 
-
 module.exports = (app) => {
   app.get(// when user route
     '/auth/google', // Kick to OAuth flow. "google": internal identifyer of the strategy 
@@ -9,7 +8,10 @@ module.exports = (app) => {
     })
   );
   
-  app.get('/auth/google/callback', passport.authenticate('google')); // tates user to the user profile
+  app.get('/auth/google/callback', passport.authenticate('google'),
+  (req,res) => { // allows us to test deployment in browser [railway]
+    res.redirect("/surveys")
+  }); // tates user to the user profile
 
   app.get('/api/logout', (req, res) =>{
     req.logout();
