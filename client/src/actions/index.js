@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { FETCH_USER } from './types';
 
-const fetchUser = () => {
+export const fetchUser = () => {
   return function(dispatch) { // redux-thunk gives this dispatch
     axios
     .get('/api/current_user') // we send a request

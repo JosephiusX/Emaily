@@ -5,12 +5,12 @@ class Header extends Component { // Using Class component for orginization.
     return (
       <nav>
         <div className="nav-wrapper">
-          <a className="left brand-logo">
+          <a href='#' className="left brand-logo">
             Emaily
           </a>
             <ul>
               <li className="right">
-                <a>Login With Google</a>
+                <a href='#'>Login With Google</a>
               </li>
             </ul>
         </div>

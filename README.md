@@ -740,3 +740,11 @@ If redux sees we called a function instead of an action, it automatically passes
 
 # 92. Refactoring the App
 As a class based component "App" can have access to a lifecycle method. 
+
+# 93. Testing FetchUser
+Time: 21:51
+
+Test:
+
+    With server running I can see the fetchUser payload in the log. The data object is populated with a id, and a googleId. If we logout the data is just an empty string.
+    
