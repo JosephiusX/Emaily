@@ -538,10 +538,6 @@ placed keys from 'keys.js' into 'dev.js' instead.
 
     adjust auth/google/callback route
 
-Test:
-    
-    in server: railway up
-    jolly-coal-production.up.railway.app
 ? Getting server error
   first maybe theres a different location for my production keys
   will try regenerating production keys
@@ -558,7 +554,24 @@ this step was recomended for heroku compatibility anyway.
 ? still no luck.
 ? changeing passport to version 0.4.1
   still no luck
-Moving on for now until I get an answer. 
+Moving on for now until I get an answer.
+? adding https routs to my google authorized and redirect URIs
+    ? no luck but the error changed
+? Noticed my shared variables need to be added to the environment.
+  Nope , same problem and error
+? maybe if i change 'mongoURI' to 'MONGO_URI' in index.js.  
+  same error.
+    Nope
+
+***** All that and I just needed to remove the '' from my environment variables. IT'S ALIVE.
+
+Test:
+    
+    in server: railway up
+    jolly-coal-production.up.railway.app/auth/google
+    select google account
+    jolly-coal-production.up.railway.app/api/current_user
+    jolly-coal-production.up.railway.app/api/logout
 
     
 # 61. [Heroku] Production Environment Variables
@@ -573,3 +586,53 @@ add 'proxy : true'
 
 Time: 14:50
 
+# 64. React App Generation
+
+in server:
+
+    npx create-react-app client
+
+in client start our react app:
+
+    npm start
+
+66. Running the Client and Server
+
+Configure server package.json "scripts".
+
+    "client": "npm run start --prefic client",
+    change the "dev" script to be named server 
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+    install concurrently in server:
+      npm i concurrently
+
+Now we can startup both servers by running:
+
+    npm run dev
+
+# 67. Imporntant Create React App Proxy Update
+
+The following instructions are deprecated. Instead:
+
+    touch client/setupProxy.js
+    input proxy code
+
+# 68. Routing Stumbling Block
+
+add auth/google href for Sign in with google button.
+
+Text:
+
+    kill server
+    relode with : npm run dev
+? Im not getting to a google oauth screen yet like in the course. 
+
+# 69. The Beauty of Create React App's Proxy
+
+Update our dev Authorized redirects in our google console Uris to add:
+
+    http://localhost:3000/auth/google/callback
+
+? same problem from previous lesson
+
+# 70. [Optional] Why This Architecture?
