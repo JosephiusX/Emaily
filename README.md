@@ -747,4 +747,7 @@ Time: 21:51
 Test:
 
     With server running I can see the fetchUser payload in the log. The data object is populated with a id, and a googleId. If we logout the data is just an empty string.
-    
+
+# 94. Refactoring to Async/Await
+
+  In actions/index
