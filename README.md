@@ -737,3 +737,6 @@ with redux-thunk we dont have controle over function that dispatches the action.
 If redux sees we called a function instead of an action, it automatically passes dispatch into the function. We have control of when the function is dispatched. 
 ? why is this helpful?
 * we can wait to dispatch the action until the axios request or response is completed.
+
+# 92. Refactoring the App
+As a class based component "App" can have access to a lifecycle method. 
