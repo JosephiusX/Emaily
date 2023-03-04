@@ -626,6 +626,7 @@ Text:
     kill server
     relode with : npm run dev
 ? Im not getting to a google oauth screen yet like in the course. 
+* 'setupProxy.js' needs to be in the src file, not just in the client. 
 
 # 69. The Beauty of Create React App's Proxy
 
@@ -643,3 +644,28 @@ Time: 18:50
 # 71. Async/Await Syntax
 
 # 72. Refactoring with Async/Await
+
+# 74. Front End Tech
+
+# 75. Client React Setup
+
+index.js - Data layer control (Redux)
+
+App.js - Rendering layer control (React Router)
+
+#76. Installing Root Modules
+
+    In the client mkdir src
+    In src touch components
+    in components touch App.js
+Naming convention: If a file is exporting a component it starts with uppercase. If not, lowercase. 
+
+# 76. Installing Root Modules
+
+# 77. Troubleshooting NPM
+
+# 78. Redux Review and Setup
+
+We have a provider with the store passed in. The provider is the connector between the store and the app. The whole point is to make it easy to access data from anywhere, even deeply nested components.
+
+# 79. The Auth Reducer
