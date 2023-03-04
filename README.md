@@ -672,3 +672,7 @@ We have a provider with the store passed in. The provider is the connector betwe
 
 # 80. Finishing Reducer Setup
 
+# 81. Why We Care About Auth
+
+# 82. React Router Setup
+
