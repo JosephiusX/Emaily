@@ -513,6 +513,19 @@ Production URIs will be our Heroku, or Railway URIs. we can circle back and take
 
     At least dev resourses are working
 
+#  57. Determining Environment
+
+    in server : touch config/dev.js
+      add to .gitignore
+placed keys from 'keys.js' into 'dev.js' instead.
+
+#Time: 11:43
+
+# 58. Version Control Scheme
+
+    touch config/prod.js
+    .gitignore: dev.js
+
 
 
 
