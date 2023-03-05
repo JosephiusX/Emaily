@@ -772,3 +772,14 @@ I can complete the google OAuth flow from start to end via the user interface in
 # 100. Landing Component
 
 landing.js - in components
+
+# 101. Link Tags
+an unauthinticated client should be directed to the landing page, where an authenticated client should be directed back to their dashboard. 
+
+Link - Navigate to a different route rendered by React Router.
+    <Link to={}></Link>
+
+a - Navigate to a completely different HTML document. 
+    <a href=''>sdj<a/>
+
+Its Alive!!!!
