@@ -17,11 +17,9 @@ module.exports = (app) => {
 
   app.get('/api/logout', (req, res) =>{
     req.logout();
-    res.send(req.user);
+    res.redirect('/'); // redirects us to the starting point after logout.
   });
 
-  app.get('/api/current_user', (req, res) => {
-    res.send(req.user);
-  });
+  app.get('/api/current_user',(req, res) => res.send(req.user)); // this lets us know weather or not the user is logged in or not for condsitional rendering.
 
 };

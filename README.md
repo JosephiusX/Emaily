@@ -760,3 +760,11 @@ Time: 23:51
 
 # 98. Redirecting a User on Auth
 At this point I start with the Landing page with 'Login With Google' the button works, I select an email, and am directed to Dashboard page. 'Logout' in upper left dosen't work yet. but it conditionally renders based on state!!
+
+# 99. Redirect on Logout
+
+Full HTTP Request - Will cause entire browser page to refresh. Choosing to go the simple route as by the time the client is logging out, theyre done. 
+
+AJAX Request - No Page refresh, but we have to handle action creators, reducer, etc, and redirect to landing page. Much faster for the user. 
+
+I can complete the google OAuth flow from start to end via the user interface including logging out!!!
