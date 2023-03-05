@@ -768,3 +768,7 @@ Full HTTP Request - Will cause entire browser page to refresh. Choosing to go th
 AJAX Request - No Page refresh, but we have to handle action creators, reducer, etc, and redirect to landing page. Much faster for the user. 
 
 I can complete the google OAuth flow from start to end via the user interface including logging out!!!
+
+# 100. Landing Component
+
+landing.js - in components
