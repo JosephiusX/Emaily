@@ -751,3 +751,5 @@ Test:
 # 94. Refactoring to Async/Await
 
   In actions/index
+Time: 23:51
+# 95. AuthReducer Return Values
