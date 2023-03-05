@@ -8,9 +8,11 @@ module.exports = (app) => {
     })
   );
   
-  app.get('/auth/google/callback', passport.authenticate('google'),
+  app.get(
+    '/auth/google/callback',
+     passport.authenticate('google'), // passport is a middleware specifically for this route
   (req,res) => { // allows us to test deployment in browser [railway]
-    res.redirect("/surveys")
+    res.redirect('/surveys');
   }); // tates user to the user profile
 
   app.get('/api/logout', (req, res) =>{

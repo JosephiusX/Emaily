@@ -759,3 +759,4 @@ Time: 23:51
 # 97. Header Content
 
 # 98. Redirecting a User on Auth
+At this point I start with the Landing page with 'Login With Google' the button works, I select an email, and am directed to Dashboard page. 'Logout' in upper left dosen't work yet. but it conditionally renders based on state!!
