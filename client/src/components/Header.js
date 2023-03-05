@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 class Header extends Component { // Using Class component for orginization. 
+  renderContent() { // Render correct content based on users state
+    switch (this.props.auth) {
+      case null:
+        return
+      case false:
+        return (
+          <li><a href="/auth/google">Login With Google</a></li>
+        );
+      default:
+        return <li><a>Logout</a></li>
+        
+    }
+  }
+
   render() {
     return (
       <nav>
@@ -10,7 +25,7 @@ class Header extends Component { // Using Class component for orginization.
           </a>
             <ul>
               <li className="right">
-                <a href='#'>Login With Google</a>
+                {this.renderContent()}
               </li>
             </ul>
         </div>
@@ -19,4 +34,8 @@ class Header extends Component { // Using Class component for orginization.
   }
 }
 
-export default Header;
+function mapStateToProps({ auth }) { // destructuring the auth property from statre
+  return { auth };
+}
+
+export default connect(mapStateToProps)(Header);
