@@ -787,3 +787,11 @@ Its Alive!!!!
 Time :25:51
 
 # sec9
+
+add code in index.js
+
+in server npm i body-parser
+
+update scripts for postbuild
+
+update build command in railway settings for the deployment
