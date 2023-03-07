@@ -786,12 +786,3 @@ Its Alive!!!!
 
 Time :25:51
 
-# 124 Routing in production
-
-had to run : npm run build , first in client. 
-
-# 127 [Railway] Postbuild and Development. 
-
-also had to add an https authorized route for google cloud console. 
-
-its now working online though. 
