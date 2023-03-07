@@ -785,3 +785,7 @@ a - Navigate to a completely different HTML document.
 Its Alive!!!!
 
 Time :25:51
+
+# 124 Routing in production
+
+had to run : npm run build , first in client. 
