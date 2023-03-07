@@ -16,6 +16,7 @@ app.use(
     keys: [keys.cookieKey]// the array allows option to provide multiple keys for extra security
   })
 );
+
 app.use(passport.initialize()); // these middleware run for every request
 app.use(passport.session());
 
