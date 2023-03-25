@@ -19,14 +19,14 @@ class Header extends Component { // Using Class component for orginization.
   render() {
     return (
       <nav>
-        <div className="nav-wrapper">
+        <div>
           <Link
             to={this.props.auth ? '/surveys' : '/'} // if auth user > /surveys(dashboard), else > Landing page
-            className="left brand-logo">
+          >
             Emaily
           </Link>
             <ul>
-              <li className="right">
+              <li>
                 {this.renderContent()}
               </li>
             </ul>
