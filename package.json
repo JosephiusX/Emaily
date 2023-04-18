@@ -18,11 +18,11 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "concurrently": "^7.6.0",
-    "cookie-session": "^2.0.0",
     "express": "^4.18.2",
+    "express-session": "^1.17.3",
     "mongoose": "^7.0.0",
     "nodemon": "^2.0.20",
-    "passport": "^0.4.1",
+    "passport": "^0.6.0",
     "passport-google-oauth20": "^2.0.0"
   },
   "description": "use npm not yarn\r     nvm install 8.1.1\r     using latest version though 19.7.0\r     mkdir server\r     cd server\r     git init\r     npm init -y \r     npm i express :  \r        Lib has helpers to simplify HTTP traffic.",

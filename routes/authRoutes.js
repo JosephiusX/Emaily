@@ -15,9 +15,10 @@ module.exports = (app) => {
     res.redirect('/surveys');// tates user to the user profile
   }); 
 
-  app.get('/api/logout', (req, res) =>{
-    req.logout();
-    res.redirect('/'); // redirects us to the starting point after logout.
+  app.get('/api/logout', (req, res) => {
+    req.logout(() => { // Add a callback function here
+      res.redirect('/'); // Redirect to the starting point after logout
+    });
   });
   // this lets us know weather or not the user is logged in or not for condsitional rendering.
   app.get('/api/current_user',(req, res) => res.send(req.user)); 
